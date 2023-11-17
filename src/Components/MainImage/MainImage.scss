@@ -8,3 +8,11 @@
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
+
+@media screen and (max-width: 800px){
+  .myImage{
+    height: 6rem;
+    width: 6rem;
+    margin-left: 1rem;
+  }
+}
