@@ -14,7 +14,7 @@ const DarkThemeButton = () => {
     return(
         <button className='themeButton'
                 onClick={toggleDarkMode}>
-            {darkMode? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun}/>}</button>
+            {darkMode? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon}/>}</button>
     )
 }
 export default DarkThemeButton
