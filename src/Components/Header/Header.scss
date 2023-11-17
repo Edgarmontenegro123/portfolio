@@ -1,0 +1,11 @@
+@import '../../index';
+
+.divHeader{
+  display: flex;
+  align-items: center;
+  color: $textLight;
+  background-color: $blueLight;
+  margin-top: 0;
+  padding: 1rem;
+  height: 20rem;
+}

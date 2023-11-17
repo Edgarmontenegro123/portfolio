@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.title{
+  margin-left: 10rem;
+  &__divider{
+    border: none;
+    height: 1px;
+    background-color: $divider;
+  }
+}
