@@ -6,11 +6,9 @@ import './DarkThemeButton.scss';
 
 const DarkThemeButton = () => {
     const [darkMode, setDarkMode] = useState(false);
-
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
     }
-
     return(
         <button className='themeButton'
                 onClick={toggleDarkMode}>

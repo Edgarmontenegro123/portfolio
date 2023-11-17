@@ -13,16 +13,13 @@
   &:hover{
     background-color: $darkRed;
   }
-
   &.dark {
     // Estilos específicos para el tema oscuro si es necesario
   }
-
   &.light {
     // Estilos específicos para el tema claro si es necesario
   }
 }
-
 /* Posicionamiento en la esquina superior derecha */
 .themeButton {
   position: fixed;
