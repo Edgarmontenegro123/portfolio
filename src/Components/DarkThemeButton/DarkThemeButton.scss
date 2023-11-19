@@ -4,28 +4,48 @@
   width: 2rem;
   height: 2rem;
   color: $textLight;
-  background-color: $lightRed;
+  background-color: $buttonRedLight;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
   &:hover{
-    background-color: $darkRed;
-  }
-  &.dark {
-    // Estilos específicos para el tema oscuro si es necesario
-  }
-  &.light {
-    // Estilos específicos para el tema claro si es necesario
+    background-color: $buttonRedDark;
   }
 }
-/* Posicionamiento en la esquina superior derecha */
 .themeButton {
   position: fixed;
   top: 0;
   right: 0;
-  margin: 2rem; /* Ajusta el margen según sea necesario */
+  margin: 2rem;
+}
+
+body.darkMode{
+  background-color: $bodyDark;
+  .divHeader{
+    background-color: $backgroundBlueDark;
+  }
+    .title__divider{
+      background-color: $dividerDark;
+    }
+    .myImage{
+      box-shadow: 2px 4px 8px 0 rgba(82,181,242,0.7);
+    }
+}
+
+body.lightMode{
+  background-color: $bodyLight;
+  .divHeader{
+    background-color: $backgroundBlueLight;
+  }
+    .title__divider{
+      background-color: $dividerLight;
+    }
+    .myImage{
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
 }
 
 @media screen and (max-width: 800px) {

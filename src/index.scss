@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-$bgMain: rgb(37, 37, 37);
+$bodyLight: whitesmoke;
+$bodyDark: #3C3C53;
 $textLight: whitesmoke;
-$textDark: #1e2432;
-$darkRed: #c3112d;
-$lightRed: rgb(222, 46, 57);
 $textMed: rgb(100,100,100);
-$textSoft: rgb(221, 221, 221);
-$blueLight: #52B5F2;
-$divider: rgba(0, 0, 0, 0.12);
+$backgroundBlueLight: #52B5F2;
+$backgroundBlueDark: #1e2432;
+$buttonRedLight: rgb(222, 46, 57);
+$buttonRedDark: #c3112d;
+$dividerLight: rgba(0, 0, 0, 0.12);
+$dividerDark: #0570B4FF;
 
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: rgb(119, 119, 119);
-  background-color: $textLight;
+  background-color: $bodyLight;
 }

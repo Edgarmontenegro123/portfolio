@@ -1,7 +1,7 @@
-import './Header.scss'
+import DarkThemeButton from "../DarkThemeButton/DarkThemeButton.jsx";
 import MainImage from "../MainImage/MainImage.jsx";
 import Title from "../Title/Title.jsx";
-import DarkThemeButton from "../DarkThemeButton/DarkThemeButton.jsx";
+import './Header.scss'
 
 const Header = () => {
     return(
