@@ -13,7 +13,8 @@ ul{
   display: flex;
   justify-content: space-evenly;
 }
-li{
+.link{
+  text-decoration: none;
   color: $textLight;
   transition: color 0.3s ease;
   &:hover{
