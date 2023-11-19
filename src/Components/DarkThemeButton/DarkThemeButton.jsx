@@ -8,19 +8,15 @@ const DarkThemeButton = () => {
     const [darkMode, setDarkMode] = useState(false);
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
-        //const header = document.getElementsByClassName('divHeader')[0]
         const body = document.body
 
         if(darkMode) {
             body.classList.remove('darkMode')
             body.classList.add('lightMode')
-            //header.style.background = '#52B5F2'
         }
         else {
             body.classList.remove('lightMode')
             body.classList.add('darkMode')
-
-            //header.style.background = '#1e2432'
         }
     }
     return(
