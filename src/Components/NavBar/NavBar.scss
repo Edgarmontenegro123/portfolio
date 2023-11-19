@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.navBar{
+  margin: 0;
+  padding: 1rem;
+  background-color: $backgroundBlueLight;
+  width: 100vw;
+  height: 3rem;
+}
+ul{
+  margin-left: 8rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+li{
+  color: $textLight;
+  transition: color 0.3s ease;
+  &:hover{
+    color: $textMed;
+  }
+}
+
+@media screen and (max-width: 800px){
+  ul{
+    margin-left: 0;
+    height: 1rem;
+  }
+}

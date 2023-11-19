@@ -14,38 +14,37 @@
     background-color: $buttonRedDark;
   }
 }
-.themeButton {
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin: 2rem;
-}
 
 body.darkMode{
   background-color: $bodyDark;
-  .divHeader{
+  .divHeader, .navBar{
     background-color: $backgroundBlueDark;
   }
-    .title__divider{
-      background-color: $dividerDark;
-    }
-    .myImage{
-      box-shadow: 2px 4px 8px 0 rgba(82,181,242,0.7);
-    }
+  .title__divider{
+    background-color: $dividerDark;
+  }
+  .myImage{
+    box-shadow: 2px 4px 8px 0 rgba(82,181,242,0.7);
+  }
+  .hero{
+    background-color: $bodyDark;
+  }
 }
 
 body.lightMode{
   background-color: $bodyLight;
-  .divHeader{
+  .divHeader, .navBar{
     background-color: $backgroundBlueLight;
   }
-    .title__divider{
-      background-color: $dividerLight;
-    }
-    .myImage{
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-
+  .title__divider{
+    background-color: $dividerLight;
+  }
+  .myImage{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .hero{
+    background-color: $bodyLight;
+  }
 }
 
 @media screen and (max-width: 800px) {
