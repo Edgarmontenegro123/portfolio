@@ -1,7 +1,4 @@
-import { useState} from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-//import {$backgroundBlueDark, $backgroundBlueLight} from '../../index.scss';
+import { useState} from 'react';
 import './DarkThemeButton.scss';
 
 const DarkThemeButton = () => {
@@ -22,7 +19,8 @@ const DarkThemeButton = () => {
     return(
         <button className='themeButton'
                 onClick={toggleDarkMode}>
-            {darkMode? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon}/>}</button>
+            {darkMode? <i className='fa-solid fa-sun' /> : <i className='fa-solid fa-moon' />}
+        </button>
     )
 }
 export default DarkThemeButton

@@ -1,9 +1,14 @@
+import AnimatedBackground from "../../Components/AnimatedBackground/AnimatedBackground.jsx";
 import './Skills.scss'
 
 const Skills = () => {
     return(
         <>
-            <h1>Vista Skills!</h1>
+            <AnimatedBackground>
+                <div className='divSkills'>
+                    <h1>Vista Skills!</h1>
+                </div>
+            </AnimatedBackground>
         </>
     )
 }

@@ -1,14 +1,10 @@
-//import Content from '../Content/Content'
-//import Icons from '../Icons/Icons'
-//import ListItemContainer from '../ListItemContainer/ListItemContainer'
+import PropTypes from 'prop-types';
 import './AnimatedBackground.scss'
 
-const AnimatedBackground = () => {
+const AnimatedBackground = ({children}) => {
     return(
         <div className ='hero'>
-            {/*<Content />*/}
-            {/*<Icons />*/}
-            {/*<ListItemContainer />*/}
+            {children}
             <div className ='hero__title'></div>
             <div className ='cube'></div>
             <div className ='cube'></div>
@@ -19,4 +15,7 @@ const AnimatedBackground = () => {
         </div>
     )
 }
+AnimatedBackground.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 export default AnimatedBackground

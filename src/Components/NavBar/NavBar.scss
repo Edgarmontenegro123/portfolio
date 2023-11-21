@@ -16,9 +16,10 @@ ul{
 .link{
   text-decoration: none;
   color: $textLight;
+  font-size: large;
   transition: color 0.3s ease;
   &:hover{
-    color: $textMed;
+    color: darkgrey;
   }
 }
 
@@ -26,5 +27,8 @@ ul{
   ul{
     margin-left: 0;
     height: 1rem;
+  }
+  .link{
+    font-size: medium;
   }
 }
