@@ -17,13 +17,11 @@ const App = () => {
         <>
             <Layout/>
             <Routes>
-                {/*<Route path={Const_Routes.home} element={<Layout/>}>*/}
-                        <Route index element={<Home/>}/>
-                        <Route path={Const_Routes.projects} element={<Projects/>}/>
-                        <Route path={Const_Routes.skills} element={<Skills/>}/>
-                        <Route path={Const_Routes.contact} element={<Contact/>}/>
-                        <Route path='*' element={<NotFound/>}/>
-                {/*</Route>*/}
+                <Route index element={<Home/>}/>
+                <Route path={Const_Routes.projects} element={<Projects/>}/>
+                <Route path={Const_Routes.skills} element={<Skills/>}/>
+                <Route path={Const_Routes.contact} element={<Contact/>}/>
+                <Route path='*' element={<NotFound/>}/>
             </Routes>
         </>
     );

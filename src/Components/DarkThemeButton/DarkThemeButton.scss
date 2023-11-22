@@ -17,8 +17,15 @@
 
 body.darkMode{
   background-color: $bodyDark;
-  .divHeader, .navBar{
+  .divHeader, .navBar, .footer{
     background-color: $backgroundBlueDark;
+  }
+  .themeButton{
+    color: #eac102;
+    background-color: $backgroundBlueLight;
+    &:hover{
+      background-color: $dividerDark;
+    }
   }
   .title__divider{
     background-color: $dividerDark;
@@ -29,11 +36,17 @@ body.darkMode{
   .hero{
     background-color: $bodyDark;
   }
+  .divContact__link{
+    color: darkgrey;
+    &:hover{
+      color: $textLight;
+    }
+  }
 }
 
 body.lightMode{
   background-color: $bodyLight;
-  .divHeader, .navBar{
+  .divHeader, .navBar, .footer{
     background-color: $backgroundBlueLight;
   }
   .title__divider{
@@ -45,10 +58,16 @@ body.lightMode{
   .hero{
     background-color: $bodyLight;
   }
+  .fa-heart-pulse{
+    color: $buttonRedLight;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .button {
     width: 25vw;
+  }
+  .footer{
+    font-size: 0.7rem;
   }
 }

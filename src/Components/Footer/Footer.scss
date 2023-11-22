@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 3vh;
+  background-color: $backgroundBlueLight;
+  color: $textLight;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0;
+}
