@@ -36,11 +36,17 @@ body.darkMode{
   .hero{
     background-color: $bodyDark;
   }
+  .fa-heart-pulse{
+    color: $backgroundBlueLight;
+  }
   .divContact__link{
     color: darkgrey;
     &:hover{
       color: $textLight;
     }
+  }
+  .divSkills{
+    color: $textLight;
   }
 }
 

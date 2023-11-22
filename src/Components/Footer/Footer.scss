@@ -4,10 +4,13 @@
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: 3vh;
+  height: 4vh;
   background-color: $backgroundBlueLight;
   color: $textLight;
   text-align: center;
   padding: 1rem;
   margin-bottom: 0;
+}
+.fa-heart-pulse{
+  color: $buttonRedLight;
 }
