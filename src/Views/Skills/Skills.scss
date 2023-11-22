@@ -1,4 +1,56 @@
+@import '../../index.scss';
+
 .divSkills{
   text-align: center;
   height: 65vh;
+  color: $textMed;
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 0;
+    li{
+      width: 33%;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      .column-content{
+        text-align: left;
+        width: 40%;
+        margin: 3rem 1rem 0;
+      }
+    }
+  }
+}
+
+hr{
+  margin: 1rem 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .divSkills{
+    height: 100vh;
+    &__divider{
+      width: 100vw;
+      border: none;
+      height: 1px;
+      background-color: $dividerLight;
+    }
+    &__list{
+      justify-content: center;
+      li{
+        width: 100%;
+        .column-content{
+          width: 40%;
+          margin: 0.5rem;
+          text-align: left;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+hr{
+  margin: 1rem;
 }

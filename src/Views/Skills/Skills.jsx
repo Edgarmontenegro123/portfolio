@@ -20,7 +20,7 @@ const Skills = () => {
             <AnimatedBackground>
                 <div className='divSkills'>
                     <h1>My Skills!</h1>
-                    <hr className='title__divider' />
+                    <hr className='divSkills__divider' />
                     <ul className='divSkills__list'>{listItems}</ul>
                 </div>
                 <Footer/>

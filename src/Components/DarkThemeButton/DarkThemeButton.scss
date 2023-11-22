@@ -27,7 +27,7 @@ body.darkMode{
       background-color: $dividerDark;
     }
   }
-  .title__divider{
+  .title__divider, .divSkills__divider{
     background-color: $dividerDark;
   }
   .myImage{
@@ -54,6 +54,9 @@ body.lightMode{
   background-color: $bodyLight;
   .divHeader, .navBar, .footer{
     background-color: $backgroundBlueLight;
+  }
+  .themeButton{
+    background-color: $buttonRedLight;
   }
   .title__divider{
     background-color: $dividerLight;
