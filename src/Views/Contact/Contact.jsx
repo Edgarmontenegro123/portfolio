@@ -1,14 +1,14 @@
 import AnimatedBackground from '../../Components/AnimatedBackground/AnimatedBackground.jsx';
+import Footer from "../../Components/Footer/Footer.jsx";
 import Constants from '../../Constants/Constants.jsx';
 import {Link} from 'react-router-dom';
-
 import './Contact.scss'
-import Footer from "../../Components/Footer/Footer.jsx";
 
 const Contact = () => {
     return(
         <>
             <AnimatedBackground>
+                <hr className='divSkills__divider'/>
                 <div className='divContact'>
                     <div className='divContact__info'>
                         <Link to={Constants.whatsapp}

@@ -3,7 +3,7 @@
 $bodyLight: whitesmoke;
 $bodyDark: #26252d;
 $textLight: whitesmoke;
-$textMed: #646464;
+$textMed: #777777;
 $backgroundBlueLight: #52B5F2;
 $backgroundBlueDark: #1e2432;
 $buttonRedLight: #DE2E39;
@@ -14,6 +14,6 @@ $dividerDark: #0570B4FF;
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  color: #777777;
+  color: $textMed;
   background-color: $bodyLight;
 }

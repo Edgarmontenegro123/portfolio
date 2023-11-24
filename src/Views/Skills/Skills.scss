@@ -1,9 +1,32 @@
 @import '../../index.scss';
 
+@keyframes fadeInUp {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+    color: hotpink;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+    color: #52B5F2;
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+
 .divSkills{
   text-align: center;
   height: 65vh;
   color: $textMed;
+  &__divider{
+    background-color: $backgroundBlueLight;
+    margin: 1rem 3rem;
+    border: none;
+    height: 1px;
+  }
   &__list{
     display: flex;
     flex-wrap: wrap;
@@ -24,18 +47,15 @@
   }
 }
 
-hr{
-  margin: 1rem 5rem;
-}
-
 @media screen and (max-width: 800px) {
   .divSkills{
     height: 100vh;
+    &__title{
+      font-size: 1rem;
+    }
     &__divider{
-      width: 100vw;
-      border: none;
-      height: 1px;
-      background-color: $dividerLight;
+      // background-color: lightgreen;
+      margin: 1rem 1rem;
     }
     &__list{
       justify-content: center;
@@ -50,7 +70,4 @@ hr{
       }
     }
   }
-}
-hr{
-  margin: 1rem;
 }
