@@ -45,8 +45,11 @@ body.darkMode{
       color: $textLight;
     }
   }
-  .divSkills{
+  .divSkills, .divHome{
     color: $textLight;
+  }
+  .divHome__card {
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
@@ -72,6 +75,9 @@ body.lightMode{
   }
   .divSkills__divider{
     background-color: $backgroundBlueLight;
+  }
+  .divHome__card {
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
