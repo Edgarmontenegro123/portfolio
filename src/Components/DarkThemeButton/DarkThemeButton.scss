@@ -51,6 +51,14 @@ body.darkMode{
   .divHome__card {
     background-color: rgba(0, 0, 0, 0);
   }
+  .slides{
+    .slick-dots, li, button:before{
+      color: $backgroundBlueLight;
+    }
+    .slick-prev, button, .slick-arrow, .slick-prev:before, .slick-next:before{
+      color: $backgroundBlueLight;
+    }
+  }
 }
 
 body.lightMode{
@@ -78,6 +86,14 @@ body.lightMode{
   }
   .divHome__card {
     background-color: rgba(0, 0, 0, 0);
+  }
+  .slides{
+    .slick-prev, button, .slick-arrow, .slick-prev:before, .slick-next:before{
+      color: $buttonRedLight;
+      &:hover{
+        color: $buttonRedDark;
+      }
+    }
   }
 }
 

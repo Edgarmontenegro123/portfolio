@@ -20,8 +20,8 @@ const Skills = () => {
             <AnimatedBackground>
                 <div className='divSkills'>
                     <hr className='divSkills__divider'/>
-                    <h2 className='divSkills__title'>Creo en construir experiencias significativas para los usuarios a través de interfaces intuitivas
-                        y elegantes!</h2>
+                    <h2 className='divSkills__title'>Creo en construir experiencias significativas para los usuarios a
+                        través de interfaces intuitivas y elegantes!</h2>
                     <hr className='divSkills__divider'/>
                     <ul className='divSkills__list'>{listItems}</ul>
                 </div>
