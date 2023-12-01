@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './Card.scss'
+import MockUp from "../../Constants/ProjectsFiles.jsx";
 
 // eslint-disable-next-line react/prop-types,no-unused-vars
 const AccordionItem = ({ title, content }) => {
@@ -25,8 +26,8 @@ const Card = () => {
         <div className='projectCard'>
             <div className='projectCard__header'>
                 <img src={'Logo'} alt='Image'/>
-                <h1>Title</h1>
-                <h2>Date</h2>
+                <h1>{MockUp.title}</h1>
+                <h2>{MockUp.date}</h2>
             </div>
             {/*<div className='projectCard__accordion'>
                 <AccordionItem title='Item 1' content='Content 1'/>

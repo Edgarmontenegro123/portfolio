@@ -1,8 +1,8 @@
 import Slider from 'react-slick';
+import {Card} from '../Card/Card.jsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.scss';
-import {Card} from "../Card/Card.jsx";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const PrevArrow = (props) => (
@@ -24,7 +24,7 @@ const Carousel = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1,
         className: 'slides',
@@ -33,6 +33,7 @@ const Carousel = () => {
         centerMode: true,
         adaptiveHeight: true,
         arrows: true,
+        autoplay: true,
     }
 
     return (

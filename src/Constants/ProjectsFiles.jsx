@@ -1,8 +1,8 @@
-
+import Logo from '../assets/Images/sunnyCloud.png'
 
 const MockUp = [{
     id: 1,
-    avatar: 'Logo',
+    avatar: Logo,
     title: 'ClimApp',
     date: 'Marzo 2021',
     img: 'gifClimApp',
