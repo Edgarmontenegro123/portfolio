@@ -59,6 +59,9 @@ body.darkMode{
       color: $backgroundBlueLight;
     }
   }
+  .custom-slick-prev, .custom-slick-next {
+    color: $backgroundBlueLight;
+  }
 }
 
 body.lightMode{

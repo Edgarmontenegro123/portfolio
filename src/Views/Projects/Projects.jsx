@@ -6,10 +6,9 @@ import './Projects.scss';
 const Projects = () => {
     return(
         <>
-            <AnimatedBackground>
+            <AnimatedBackground className='animatedBackground'>
                 <hr className='divSkills__divider'/>
                 <div className='divProjects'>
-                    <h1>Vista Projects!</h1>
                     <Carousel/>
                 </div>
                 <Footer/>

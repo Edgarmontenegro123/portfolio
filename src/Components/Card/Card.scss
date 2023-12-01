@@ -1,0 +1,20 @@
+@import '../../index.scss';
+
+.projectCard{
+  width: 20rem;
+  height: 20rem;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 800px){
+  .projectCard{
+    width: 9.5rem;
+    height: 20rem;
+  }
+}

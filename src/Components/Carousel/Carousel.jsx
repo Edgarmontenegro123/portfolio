@@ -2,46 +2,59 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.scss';
+import {Card} from "../Card/Card.jsx";
+
+// eslint-disable-next-line react-refresh/only-export-components
+const PrevArrow = (props) => (
+    // eslint-disable-next-line react/prop-types
+    <div className='custom-slick-prev' onClick={props.onClick}>
+        <i className='fa-solid fa-arrow-left'></i>
+    </div>
+);
+
+// eslint-disable-next-line react-refresh/only-export-components
+const NextArrow = (props) => (
+    // eslint-disable-next-line react/prop-types
+    <div className='custom-slick-next' onClick={props.onClick}>
+        <i className='fa-solid fa-arrow-right'></i>
+    </div>
+);
 
 const Carousel = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 1000,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        lazyLoad: true,
+        className: 'slides',
+        prevArrow: <PrevArrow/>,
+        nextArrow: <NextArrow/>,
         centerMode: true,
         adaptiveHeight: true,
-        fade: true,
         arrows: true,
-        autoplaySpeed: 3000,
-        className: 'slides'
     }
 
-
     return (
-        <div id='myCarousel'>
-            <h2> Single Item</h2>
+        <div>
             <Slider {...settings} >
                 <div>
-                    <h3>1</h3>
+                    <Card/>
                 </div>
                 <div>
-                    <h3>2</h3>
+                    <Card/>
                 </div>
                 <div>
-                    <h3>3</h3>
+                    <Card/>
                 </div>
                 <div>
-                    <h3>4</h3>
+                    <Card/>
                 </div>
                 <div>
-                    <h3>5</h3>
+                    <Card/>
                 </div>
                 <div>
-                    <h3>6</h3>
+                    <Card/>
                 </div>
             </Slider>
         </div>
