@@ -28,9 +28,9 @@ const Card = () => {
                 <h1>Title</h1>
                 <h2>Date</h2>
             </div>
-            <div className='projectCard__accordion'>
+            {/*<div className='projectCard__accordion'>
                 <AccordionItem title='Item 1' content='Content 1'/>
-            </div>
+            </div>*/}
         </div>
     )
 }

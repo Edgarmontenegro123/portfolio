@@ -36,7 +36,7 @@ const Carousel = () => {
     }
 
     return (
-        <div>
+        <div className='carousel'>
             <Slider {...settings} >
                 <div>
                     <Card/>
