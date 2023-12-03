@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {Link} from 'react-router-dom';
 import './Card.scss'
 
 // eslint-disable-next-line react/prop-types,no-unused-vars
@@ -12,9 +13,11 @@ const AccordionItem = ({ video, content }) => {
     return(
         <div className='accordion'>
             <div className='accordion__header' onClick={toogleAccordion}>
-                <button className='accordion__play'>
+                <Link to={video}
+                      target='_blank' rel='noreferrer'
+                      className='accordion__play'>
                     <i className='fa-solid fa-play' id='play'></i>
-                </button>
+                </Link>
                 <span>{isExpanded? <i className='fa-solid fa-angles-up' id='up'></i> :
                     <i className='fa-solid fa-angles-down' id='down'></i>}
                 </span>
