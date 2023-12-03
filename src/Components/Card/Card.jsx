@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './Card.scss'
 
 // eslint-disable-next-line react/prop-types,no-unused-vars
-const AccordionItem = ({ video, content }) => {
+const AccordionItem = ({ video, content, tech }) => {
     const [isExpanded, setIsExpanded] = useState(false)
 
     const toogleAccordion = () => {
@@ -22,7 +22,14 @@ const AccordionItem = ({ video, content }) => {
                     <i className='fa-solid fa-angles-down' id='down'></i>}
                 </span>
             </div>
-            {isExpanded && <div className='accordion__content'>{content}</div>}
+            {isExpanded && <div className='accordion__content'>
+                {content}
+                <br/>
+                <span>Para realizarla se utilizaron tecnologías como:</span>
+                <ul className='accordion__tech'>
+                    <li><b>{tech}</b></li>
+                </ul>
+            </div>}
         </div>
     )
 }
@@ -48,7 +55,7 @@ const Card = ({project}) => {
             </div>
             <div className='projectCard__accordionItem'>
                 {/* eslint-disable-next-line react/prop-types */}
-                <AccordionItem video={project.video} content={project.description}/>
+                <AccordionItem video={project.video} content={project.description} tech={project.tech}/>
             </div>
         </div>
     )
