@@ -1,5 +1,6 @@
 import Slider from 'react-slick';
 import {Card} from '../Card/Card.jsx';
+import MockUp from "../../Constants/ProjectsFiles.jsx";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.scss';
@@ -24,7 +25,7 @@ const Carousel = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 5000,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         className: 'slides',
@@ -33,30 +34,20 @@ const Carousel = () => {
         centerMode: true,
         adaptiveHeight: true,
         arrows: true,
-        autoplay: true,
+        //autoplay: true,
     }
 
     return (
         <div className='carousel'>
             <Slider {...settings} >
-                <div>
-                    <Card/>
-                </div>
-                <div>
-                    <Card/>
-                </div>
-                <div>
-                    <Card/>
-                </div>
-                <div>
-                    <Card/>
-                </div>
-                <div>
-                    <Card/>
-                </div>
-                <div>
-                    <Card/>
-                </div>
+                {MockUp?.map(project => {
+                    return(
+                        <div key={project.id}>
+                            <Card project={project}/>
+                        </div>
+                    )
+                })
+                }
             </Slider>
         </div>
     );

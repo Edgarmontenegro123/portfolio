@@ -1,9 +1,8 @@
-import {useState} from 'react';
+import {useState} from 'react'
 import './Card.scss'
-import MockUp from "../../Constants/ProjectsFiles.jsx";
 
 // eslint-disable-next-line react/prop-types,no-unused-vars
-const AccordionItem = ({ title, content }) => {
+const AccordionItem = ({ video, content }) => {
     const [isExpanded, setIsExpanded] = useState(false)
 
     const toogleAccordion = () => {
@@ -13,25 +12,41 @@ const AccordionItem = ({ title, content }) => {
     return(
         <div className='accordion'>
             <div className='accordion__header' onClick={toogleAccordion}>
-                <h3>{title}</h3>
-                <span>{isExpanded? <i className='fa-solid fa-angles-up'></i> : <i className='fa-solid fa-angles-down'></i>}</span>
+                <button className='accordion__play'>
+                    <i className='fa-solid fa-play' id='play'></i>
+                </button>
+                <span>{isExpanded? <i className='fa-solid fa-angles-up' id='up'></i> :
+                    <i className='fa-solid fa-angles-down' id='down'></i>}
+                </span>
             </div>
             {isExpanded && <div className='accordion__content'>{content}</div>}
         </div>
     )
 }
 
-const Card = () => {
+// eslint-disable-next-line react/prop-types
+const Card = ({project}) => {
     return(
         <div className='projectCard'>
-            <div className='projectCard__header'>
-                <img src={'Logo'} alt='Image'/>
-                <h1>{MockUp.title}</h1>
-                <h2>{MockUp.date}</h2>
+            {/* eslint-disable-next-line react/prop-types */}
+            <div  key={project.id}  className='projectCard__header'>
+                {/* eslint-disable-next-line react/prop-types */}
+                <img src={project.avatar} alt={project.title} className='projectCard__img' />
+                <div className='projectCard__item'>
+                    {/* eslint-disable-next-line react/prop-types */}
+                    <span className='projectCard__title'><b>{project.title}</b></span>
+                    {/* eslint-disable-next-line react/prop-types */}
+                    <span className='projectCard__date'>{project.date}</span>
+                </div>
             </div>
-            {/*<div className='projectCard__accordion'>
-                <AccordionItem title='Item 1' content='Content 1'/>
-            </div>*/}
+            <div className='projectCard__gif'>
+                {/* eslint-disable-next-line react/prop-types */}
+                <img src={project.img} alt={project.title} className='projectCard__image'/>
+            </div>
+            <div className='projectCard__accordionItem'>
+                {/* eslint-disable-next-line react/prop-types */}
+                <AccordionItem video={project.video} content={project.description}/>
+            </div>
         </div>
     )
 }
