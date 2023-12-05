@@ -3,6 +3,7 @@
 .carousel{
   margin-top: 3rem;
   margin-bottom: 3rem;
+  z-index: 1;
 }
 .custom-slick-prev {
   left: 5%;
@@ -12,7 +13,7 @@
 }
 .custom-slick-prev, .custom-slick-next {
   position: absolute;
-  top: 50%;
+  top: 30%;
   cursor: pointer;
   z-index: 1;
   color: $buttonRedLight;
@@ -20,4 +21,17 @@
   &:hover{
     color: $buttonRedDark;
   }
+}
+.slick-dots li button:before {
+  z-index: 2;
+}
+
+@media screen and (max-width: 800px){
+  .custom-slick-prev, .custom-slick-next{
+    font-size: 1rem;
+  }
+  .slick-dots {
+    margin: 2rem 0;
+  }
+
 }

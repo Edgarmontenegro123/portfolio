@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './Card.scss'
 
 // eslint-disable-next-line react/prop-types,no-unused-vars
-const AccordionItem = ({ video, content, tech }) => {
+const AccordionItem = ({ video, content, tech, deploy, gitHub }) => {
     const [isExpanded, setIsExpanded] = useState(false)
 
     const toogleAccordion = () => {
@@ -11,7 +11,7 @@ const AccordionItem = ({ video, content, tech }) => {
     }
 
     return(
-        <div className='accordion'>
+        <div className={`accordion ${isExpanded ? 'accordion__expanded' : ''}`}>
             <div className='accordion__header' onClick={toogleAccordion}>
                 <Link to={video}
                       target='_blank' rel='noreferrer'
@@ -24,11 +24,22 @@ const AccordionItem = ({ video, content, tech }) => {
             </div>
             {isExpanded && <div className='accordion__content'>
                 {content}
-                <br/>
-                <span>Para realizarla se utilizaron tecnologías como:</span>
-                <ul className='accordion__tech'>
-                    <li><b>{tech}</b></li>
-                </ul>
+                <div className='accordion__techs'>
+                    <span>Para realizarla se utilizaron tecnologías como:</span>
+                    <span className='accordion__tech'><b>{tech}</b></span>
+                </div>
+                <div className='accordion__deploy'>
+                    <span className='accordion__deploySpan'>Pruéba la
+                        <Link to={deploy} target='_blank' rel='noreferrer'
+                                        className='accordion__deployLink'> App acá!</Link>
+                    </span>
+
+                    <span className='accordion__deploySpan'>Observa el
+                        <Link to={gitHub} target='_blank' rel='noreferrer'
+                                         className='accordion__deployLink'> Código acá!</Link>
+                    </span>
+
+                </div>
             </div>}
         </div>
     )
@@ -55,7 +66,9 @@ const Card = ({project}) => {
             </div>
             <div className='projectCard__accordionItem'>
                 {/* eslint-disable-next-line react/prop-types */}
-                <AccordionItem video={project.video} content={project.description} tech={project.tech}/>
+                <AccordionItem video={project.video} content={project.description}
+                               /* eslint-disable-next-line react/prop-types */
+                               tech={project.tech} deploy={project.deploy} gitHub={project.gitHub}/>
             </div>
         </div>
     )
