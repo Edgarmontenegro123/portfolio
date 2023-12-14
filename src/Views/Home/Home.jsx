@@ -51,7 +51,7 @@ const Home = () => {
                     </Link>
                     <br />
                     <Link
-                        to='https://www.canva.com/design/DAElFbGgReo/w5KZpX2OLMFUX0hXbxV56w/view?utm_content=DAElFbGgReo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
+                        to='https://www.canva.com/design/DAElFbGgReo/C9nuGKZ_8Ovuwe-2GW7TGQ/view?utm_content=DAElFbGgReo&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
