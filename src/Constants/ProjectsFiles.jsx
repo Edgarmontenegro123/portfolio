@@ -28,9 +28,9 @@ const MockUp = [{
     description: 'Con una interfaz muy intuitiva, que permite comprar productos saludables, ordenarlos por precio, por categoría, incluirlos en una wishlist  o llevarlos a un carrito de compra donde se permite terminar el proceso de compra mediante una pasarela de pagos.',
     tech: 'React, Redux, Material UI, NodeJS, PostgreSQL',
     deploy: 'https://Healthier.vercel.app',
-    gitHub: 'https://github.com/Healthier-Group/Healthier'
-    },
-    {id: 3,
+    gitHub: 'https://github.com/Healthier-Group/Healthier'},
+    {
+    id: 3,
     avatar: LogoYoutube,
     title: 'Youtube-Challenge',
     date: 'Noviembre 2023',
@@ -41,7 +41,7 @@ const MockUp = [{
     tech: 'JavaScript, React, Sass, HTML5, CSS3, Youtube API, Express',
     deploy: 'https://challenge-youtube.vercel.app/',
     gitHub: 'https://github.com/Edgarmontenegro123/challenge-youtube'},
-{
+    {
     id: 4,
     avatar: LogoHealthier,
     title: 'Healthier2',
