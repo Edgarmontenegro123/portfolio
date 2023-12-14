@@ -40,19 +40,6 @@ const MockUp = [{
     description: 'Esta es una App con una interfaz amigable, que permite ingresar una URL de Youtube en un buscador intuitivo, que trae el título del video, la cantidad de views y sus comentarios.',
     tech: 'JavaScript, React, Sass, HTML5, CSS3, Youtube API, Express',
     deploy: 'https://challenge-youtube.vercel.app/',
-    gitHub: 'https://github.com/Edgarmontenegro123/challenge-youtube'},
-    {
-    id: 4,
-    avatar: LogoHealthier,
-    title: 'Healthier2',
-    date: 'Agosto 2021',
-    img: GifHealthier,
-    resume: 'E-Commerce realizado de manera grupal como proyecto final para Soy Henry Bootcamp.',
-    video: 'https://vimeo.com/manage/videos/586633960',
-    description: 'Con una interfaz muy intuitiva, que permite comprar productos saludables, ordenarlos por precio, por categoría, incluirlos en una wishlist  o llevarlos a un carrito de compra donde se permite terminar el proceso de compra mediante una pasarela de pagos.',
-    tech: 'React, Redux, Material UI, NodeJS, PostgreSQL',
-    deploy: 'https://Healthier.vercel.app',
-    gitHub: 'https://github.com/Healthier-Group/Healthier'
-}]
+    gitHub: 'https://github.com/Edgarmontenegro123/challenge-youtube'}]
 
 export default MockUp
