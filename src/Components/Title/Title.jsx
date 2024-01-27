@@ -1,18 +1,28 @@
 import './Title.scss'
+import TypeWriter from "../../assets/Functions/Functions.jsx";
+import {useEffect, useState} from "react";
 
 const Title = () => {
-    let p = '<'
-    let q = '/>'
+    const [showH2, setShowH2] = useState(false)
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setShowH2(true)
+        }, 2000)
+        return () => clearTimeout(timeoutId)
+    }, [])
 
     return(
         <div className='title'>
-            <h1>Hola, mi nombre es <b>Edgar</b>!</h1>
+            <h1><TypeWriter text='Hola, mi nombre es Edgar!'/></h1>
             <hr className='title__divider' />
-            <h2><b>{p} Software Developer {q}</b></h2>
-            <hr className='title__divider' />
+            {showH2 && (
+                <>
+                    <h2><TypeWriter text='<Software Developer/>'/></h2>
+                    <hr className='title__divider' />
+                </>
+            )}
         </div>
     )
 }
 export default Title
-
-

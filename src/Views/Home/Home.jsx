@@ -1,11 +1,9 @@
-import { useEffect, useState } from 'react';
 import AnimatedBackground from '../../Components/AnimatedBackground/AnimatedBackground.jsx';
 import Footer from '../../Components/Footer/Footer.jsx';
 import { Link } from 'react-router-dom';
 import './Home.scss';
 
 const Home = () => {
-    const [text, setText] = useState('');
     const fullText = `
     Soy un apasionado Desarrollador Web con un trasfondo único. Comencé mi carrera en diseño de
     indumentaria y pasé una década en gastronomía antes de sumergirme en el emocionante mundo del
@@ -23,27 +21,13 @@ const Home = () => {
     entusiasmo para alcanzar los objetivos de la empresa.
   `;
 
-    useEffect(() => {
-        let currentIndex = 0;
-        const intervalId = setInterval(() => {
-            setText(fullText.substring(0, currentIndex));
-            currentIndex ++;
-
-            if (currentIndex > fullText.length) {
-                clearInterval(intervalId);
-            }
-        }, 30);
-
-        return () => clearInterval(intervalId);
-    }, [fullText]);
-
     return (
         <>
             <AnimatedBackground>
                 <hr className='divSkills__divider' />
                 <div className='divHome'>
                     <div className='divHome__card'>
-                        <p className='divHome__animated-text'>{text}</p>
+                        <p className='divHome__animated-text'>{fullText}</p>
                     </div>
                     <br />
                     <Link to='/contact' className='divHome__link'>
