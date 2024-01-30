@@ -1,6 +1,6 @@
+import {useEffect, useState} from 'react'
+import TypeWriter from '../../assets/Functions/Functions.jsx';
 import './Title.scss'
-import TypeWriter from "../../assets/Functions/Functions.jsx";
-import {useEffect, useState} from "react";
 
 const Title = () => {
     const [showH2, setShowH2] = useState(false)

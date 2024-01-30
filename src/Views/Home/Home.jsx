@@ -1,9 +1,20 @@
+import {useEffect, useState} from 'react';
 import AnimatedBackground from '../../Components/AnimatedBackground/AnimatedBackground.jsx';
 import Footer from '../../Components/Footer/Footer.jsx';
 import { Link } from 'react-router-dom';
 import './Home.scss';
 
 const Home = () => {
+    const [showText, setShowText] = useState(false);
+
+    // Simula el efecto de máquina de escribir
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowText(true);
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
     const fullText = `
     Soy un apasionado Desarrollador Web con un trasfondo único. Comencé mi carrera en diseño de
     indumentaria y pasé una década en gastronomía antes de sumergirme en el emocionante mundo del
@@ -27,7 +38,7 @@ const Home = () => {
                 <hr className='divSkills__divider' />
                 <div className='divHome'>
                     <div className='divHome__card'>
-                        <p className='divHome__animated-text'>{fullText}</p>
+                        <p className={`divHome__animated-text ${showText ? 'show' : ''}`}>{fullText}</p>
                     </div>
                     <br />
                     <Link to='/contact' className='divHome__link'>
