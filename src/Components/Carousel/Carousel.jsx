@@ -1,11 +1,10 @@
 import Slider from 'react-slick';
 import {Card} from '../Card/Card.jsx';
-import MockUp from "../../Constants/ProjectsFiles.jsx";
+import MockUp from '../../Constants/ProjectsFiles.jsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.scss';
 
-// eslint-disable-next-line react-refresh/only-export-components
 const PrevArrow = (props) => (
     // eslint-disable-next-line react/prop-types
     <div className='custom-slick-prev' onClick={props.onClick}>
@@ -13,7 +12,6 @@ const PrevArrow = (props) => (
     </div>
 );
 
-// eslint-disable-next-line react-refresh/only-export-components
 const NextArrow = (props) => (
     // eslint-disable-next-line react/prop-types
     <div className='custom-slick-next' onClick={props.onClick}>
@@ -25,16 +23,16 @@ const Carousel = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         className: 'slides',
         prevArrow: <PrevArrow/>,
         nextArrow: <NextArrow/>,
         centerMode: true,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         arrows: true,
-        //autoplay: true,
+        /*autoplay: true,*/
     }
 
     return (
@@ -45,11 +43,12 @@ const Carousel = () => {
                         <div key={project.id}>
                             <Card project={project}/>
                         </div>
-                    )
-                })
+                        )
+                    })
                 }
             </Slider>
         </div>
     );
 }
+
 export default Carousel

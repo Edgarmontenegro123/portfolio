@@ -1,8 +1,33 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom';
 import './Card.scss'
+import {PropTypesConstantsCard, PropTypesConstantsAccordionItem} from "../../Constants/PropTypesConstants.jsx";
 
-// eslint-disable-next-line react/prop-types,no-unused-vars
+const Card = ({project}) => {
+    return(
+        <div className='projectCard'>
+            <div  key={project.id}  className='projectCard__header'>
+                <img src={project.avatar} alt={project.title} className='projectCard__img' />
+                <div className='projectCard__item'>
+                    <span className='projectCard__title'><b>{project.title}</b></span>
+                    <span className='projectCard__date'>{project.date}</span>
+                </div>
+            </div>
+            <div className='projectCard__gif'>
+                <img src={project.img} alt={project.title} className='projectCard__image'/>
+            </div>
+            <div>
+                <AccordionItem video={project.video}
+                               content={project.description}
+                               tech={project.tech}
+                               deploy={project.deploy}
+                               gitHub={project.gitHub}/>
+            </div>
+        </div>
+    )
+}
+Card.propTypes = PropTypesConstantsCard
+
 const AccordionItem = ({ video, content, tech, deploy, gitHub }) => {
     const [isExpanded, setIsExpanded] = useState(false)
 
@@ -11,7 +36,7 @@ const AccordionItem = ({ video, content, tech, deploy, gitHub }) => {
     }
 
     return(
-        <div className={`accordion ${isExpanded ? 'accordion__expanded' : ''}`}>
+        <div className={`accordion ${isExpanded && 'accordion__expanded'}`}>
             <div className='accordion__header' onClick={toogleAccordion}>
                 <Link to={video}
                       target='_blank' rel='noreferrer'
@@ -33,46 +58,17 @@ const AccordionItem = ({ video, content, tech, deploy, gitHub }) => {
                         <Link to={deploy} target='_blank' rel='noreferrer'
                                         className='accordion__deployLink'> App acá!</Link>
                     </span>
-
                     <span className='accordion__deploySpan'>Observa el
                         <Link to={gitHub} target='_blank' rel='noreferrer'
                                          className='accordion__deployLink'> Código acá!</Link>
                     </span>
-
                 </div>
             </div>}
         </div>
     )
 }
 
-// eslint-disable-next-line react/prop-types
-const Card = ({project}) => {
-    return(
-        <div className='projectCard'>
-            {/* eslint-disable-next-line react/prop-types */}
-            <div  key={project.id}  className='projectCard__header'>
-                {/* eslint-disable-next-line react/prop-types */}
-                <img src={project.avatar} alt={project.title} className='projectCard__img' />
-                <div className='projectCard__item'>
-                    {/* eslint-disable-next-line react/prop-types */}
-                    <span className='projectCard__title'><b>{project.title}</b></span>
-                    {/* eslint-disable-next-line react/prop-types */}
-                    <span className='projectCard__date'>{project.date}</span>
-                </div>
-            </div>
-            <div className='projectCard__gif'>
-                {/* eslint-disable-next-line react/prop-types */}
-                <img src={project.img} alt={project.title} className='projectCard__image'/>
-            </div>
-            <div className='projectCard__accordionItem'>
-                {/* eslint-disable-next-line react/prop-types */}
-                <AccordionItem video={project.video} content={project.description}
-                               /* eslint-disable-next-line react/prop-types */
-                               tech={project.tech} deploy={project.deploy} gitHub={project.gitHub}/>
-            </div>
-        </div>
-    )
-}
+AccordionItem.propTypes = PropTypesConstantsAccordionItem
 
 export  {
     Card, AccordionItem
