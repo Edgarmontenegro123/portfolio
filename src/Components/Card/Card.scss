@@ -58,17 +58,10 @@
     justify-content: space-between;
     margin-top: 2rem;
   }
-  &__expanded {
-    .accordion__content{
-      height: auto;
-      z-index: 3;
-    }
-  }
   &__content{
     margin-top: 1rem;
     margin-left: 0;
     font-size: 1rem;
-    /*overflow: hidden;*/
   }
   &__techs{
     display: flex;
