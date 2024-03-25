@@ -3,5 +3,11 @@
 }
 
 .divProjects{
-  height: 100vh;
+  height: 120vh;
+}
+
+@media screen and (max-width: 800px) {
+  .divProjects{
+    height: 140vh;
+  }
 }
