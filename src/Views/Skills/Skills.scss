@@ -19,7 +19,7 @@
 
 .divSkills{
   text-align: center;
-  height: 75vh;
+  height: 80vh;
   color: $textMed;
   &__divider{
     background-color: $backgroundBlueLight;
@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 800px) {
   .divSkills{
-    height: 100vh;
+    height: 120vh;
     margin-bottom: 10rem;
     &__title{
       font-size: 1rem;
