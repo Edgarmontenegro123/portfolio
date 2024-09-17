@@ -1,12 +1,26 @@
+import LogoQuizUp from '../assets/Images/quizUpLogo.png'
 import LogoClimApp from '../assets/Images/sunnyCloud.png'
 import LogoHealthier from '../assets/Images/healthier.png'
 import LogoYoutube from '../assets/Images/youtubeLogo.png'
+import GifQuizUp from '../assets/Images/gifQuizUp.gif'
 import GifClimApp from '../assets/Images/gifClimApp.gif'
 import GifHealthier from '../assets/Images/gifHealthier.gif'
 import GifYoutubeChallenge from '../assets/Images/gifYoutubeChallenge.gif'
 
 const MockUp = [{
     id: 1,
+    avatar: LogoQuizUp,
+    title: 'QuizUp!',
+    date: 'Septiembre 2024',
+    img: GifQuizUp,
+    resume: 'Juego de trivia que permite a los usuarios responder preguntas, escoger entre diferentes categorías y elegir la dificultad para jugar!',
+    video: 'https://vimeo.com/manage/videos/1010081429',
+    description: 'Es un juego de trivia que permite a los usuarios responder preguntas, escoger entre muchísimas categorías y elegir la dificultad para jugar!',
+    tech: 'TypeScript, React, NextJs, Tailwind, Swiper, ESLint, Prettier, Jest, React Testing Library',
+    deploy: 'https://quizup-by-montenegro.vercel.app/',
+    gitHub: 'https://github.com/Edgarmontenegro123/quizup'},
+    {
+    id: 2,
     avatar: LogoClimApp,
     title: 'ClimApp',
     date: 'Marzo 2021',
@@ -18,7 +32,7 @@ const MockUp = [{
     deploy: 'https://climappmontenegro.vercel.app',
     gitHub: 'https://github.com/Edgarmontenegro123/ClimApp'},
     {
-    id: 2,
+    id: 3,
     avatar: LogoHealthier,
     title: 'Healthier',
     date: 'Agosto 2021',
@@ -30,7 +44,7 @@ const MockUp = [{
     deploy: 'https://Healthier.vercel.app',
     gitHub: 'https://github.com/Healthier-Group/Healthier'},
     {
-    id: 3,
+    id: 4,
     avatar: LogoYoutube,
     title: 'Youtube-Challenge',
     date: 'Noviembre 2023',
