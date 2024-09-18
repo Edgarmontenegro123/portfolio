@@ -30,7 +30,7 @@ const MockUp = [{
     resume: 'Aplicación basada en el famoso proyecto To-Do List, potenciada con diferentes funcionalidades.',
     video: 'https://vimeo.com/manage/videos/1010457455',
     description: 'Esta es una App con una interfaz amigable, que permite agregar notas o tareas, modificarlas, separarlas por colores, organizarlas con un simple arrastre, eliminar las tareas completadas y guardarlas en tu dispositivo entre otras funcionalidades.',
-    tech: 'JavaScript, React, NextJs, Typescript, Tailwind, HTML5, CSS3',
+    tech: 'Typescript, React, NextJs, Tailwind, HTML5, CSS3',
     deploy: 'https://task-mate-by-montenegro.vercel.app/',
     gitHub: 'https://github.com/Edgarmontenegro123/task-mate'},
     {
