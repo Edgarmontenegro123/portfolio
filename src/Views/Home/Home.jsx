@@ -3,6 +3,7 @@ import AnimatedBackground from '../../Components/AnimatedBackground/AnimatedBack
 import Footer from '../../Components/Footer/Footer.jsx';
 import { Link } from 'react-router-dom';
 import './Home.scss';
+import Constants from "../../Constants/Constants.jsx";
 
 const Home = () => {
     const [showText, setShowText] = useState(false);
@@ -46,7 +47,8 @@ const Home = () => {
                     </Link>
                     <br />
                     <Link
-                        to='https://www.canva.com/design/DAElFbGgReo/C9nuGKZ_8Ovuwe-2GW7TGQ/view?utm_content=DAElFbGgReo&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel'
+                        to={Constants.curriculumPDF}
+
                         target='_blank'
                         rel='noopener noreferrer'
                     >
