@@ -9,7 +9,7 @@ const Constants = {
     perfilGithub: 'Edgarmontenegro123',
     twitter: 'https://twitter.com/MontenegroCode',
     perfilTwitter: 'MontenegroCode',
-    curriculumPDF: 'https://drive.google.com/file/d/1auMTO9Rs-sVMO2M313-h7NP32CRWUN_H/view?usp=drive_link',
+    curriculumPDF: 'https://drive.google.com/file/d/1fsrAndbeG4dxd6B7LjAD6CtgyJQTqlc2/view?usp=sharing',
     home: 'https://www.google.com/maps/place/Palermo,+CABA/@-34.5734316,-58.4416579,14z/data=!3m1!4b1!4m6!3m5!1s0x95bcb59c771eb933:0x6b3113b596d78c69!8m2!3d-34.5780655!4d-58.4265317!16zL20vMDQ3a3ps?entry=ttu'
 }
 
