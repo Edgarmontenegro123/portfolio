@@ -11,6 +11,7 @@ import GifHealthier from '../assets/Images/gifHealthier.gif'
 import GifTaskMate from '../assets/Images/gifTaskMate.gif'
 import GifYoutubeChallenge from '../assets/Images/gifYoutubeChallenge.gif'
 
+
 const MockUp = [{
     id: 0,
     avatar: LogoTaskMateEvolution,
